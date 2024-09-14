@@ -15,7 +15,7 @@ class MapsApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.white,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: Routes.signInScreen,
+      initialRoute: Routes.loginScreen,
       onGenerateRoute: appRouter.generateRoute,
     );
   }

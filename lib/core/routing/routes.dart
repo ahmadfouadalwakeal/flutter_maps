@@ -1,3 +1,3 @@
 class Routes {
-  static const String signInScreen = '/signInScreen';
+  static const String loginScreen = '/loginScreen';
 }
