@@ -10,25 +10,27 @@ class LoginScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Form(
-        key: _phoneFormKey,
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 32.w, vertical: 88.h),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const BuildIntroTexts(),
-              SizedBox(
-                height: 70.h,
-              ),
-              BuildPhoneFromField(),
-              SizedBox(
-                height: 70.h,
-              ),
-              BuildNextButton(),
-            ],
+    return SafeArea(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Form(
+          key: _phoneFormKey,
+          child: Container(
+            margin: EdgeInsets.symmetric(horizontal: 32.w, vertical: 64.h),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const BuildIntroTexts(),
+                SizedBox(
+                  height: 70.h,
+                ),
+                BuildPhoneFromField(),
+                SizedBox(
+                  height: 70.h,
+                ),
+                BuildNextButton(),
+              ],
+            ),
           ),
         ),
       ),

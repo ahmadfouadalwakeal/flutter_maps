@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_maps/core/constants/my_colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+// ignore: must_be_immutable
 class BuildPhoneFromField extends StatelessWidget {
   BuildPhoneFromField({super.key});
   late String phoneNumber;
