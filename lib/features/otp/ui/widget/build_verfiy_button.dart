@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_maps/core/constants/styles.dart';
-import 'package:flutter_maps/core/routing/routes.dart';
 
-class BuildNextButton extends StatelessWidget {
-  const BuildNextButton({super.key});
+class BuildVerfiyButton extends StatelessWidget {
+  const BuildVerfiyButton({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.centerRight,
       child: ElevatedButton(
-        onPressed: () {
-          Navigator.pushNamed(context, Routes.otpScreen);
-        },
+        onPressed: () {},
         child: Text(
-          'Next',
+          'Verify',
           style: TextStyles.font16WhiteSemiBold,
         ),
         style: ElevatedButton.styleFrom(
