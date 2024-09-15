@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps/core/routing/routes.dart';
-import 'package:flutter_maps/features/login/ui/login_screen.dart';
+
+import '../../features/login/ui/login_screen.dart';
+import 'routes.dart';
 
 class AppRouter {
   Route? generateRoute(RouteSettings setting) {
@@ -8,7 +9,7 @@ class AppRouter {
     switch (setting.name) {
       case Routes.loginScreen:
         return MaterialPageRoute(
-          builder: (_) => const LoginScreen(),
+          builder: (_) => LoginScreen(),
         );
       default:
         return null;

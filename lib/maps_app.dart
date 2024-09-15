@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps/core/routing/app_router.dart';
-import 'package:flutter_maps/core/routing/routes.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import 'core/routing/app_router.dart';
+import 'core/routing/routes.dart';
 
 class MapsApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -8,15 +10,19 @@ class MapsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Maps App',
-      theme: ThemeData(
-        primaryColor: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
+    return ScreenUtilInit(
+      designSize: const Size(375, 812),
+      minTextAdapt: true,
+      child: MaterialApp(
+        title: 'Maps App',
+        theme: ThemeData(
+          primaryColor: Colors.blue,
+          scaffoldBackgroundColor: Colors.white,
+        ),
+        debugShowCheckedModeBanner: false,
+        initialRoute: Routes.loginScreen,
+        onGenerateRoute: appRouter.generateRoute,
       ),
-      debugShowCheckedModeBanner: false,
-      initialRoute: Routes.loginScreen,
-      onGenerateRoute: appRouter.generateRoute,
     );
   }
 }
