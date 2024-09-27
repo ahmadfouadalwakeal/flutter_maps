@@ -1,4 +1,3 @@
-class Routes {
-  static const String loginScreen = '/loginScreen';
-  static const String otpScreen = '/otpScreen';
-}
+const loginScreen = '/login-screen';
+const otpScreen = '/otp-screen';
+const mapScreen = '/map-screen';
