@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_maps/main.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'core/routing/app_router.dart';
-import 'core/routing/routes.dart';
 
 class MapsApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -20,8 +20,8 @@ class MapsApp extends StatelessWidget {
           scaffoldBackgroundColor: Colors.white,
         ),
         debugShowCheckedModeBanner: false,
-        initialRoute: Routes.loginScreen,
         onGenerateRoute: appRouter.generateRoute,
+        initialRoute: initialRoute,
       ),
     );
   }

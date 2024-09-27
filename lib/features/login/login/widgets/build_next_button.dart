@@ -1,21 +1,22 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_maps/core/constants/styles.dart';
 
-class BuildVerfiyButton extends StatelessWidget {
-  const BuildVerfiyButton({super.key});
+class BuildNextButton extends StatelessWidget {
+  final Function() onPressed;
+
+  const BuildNextButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: Alignment.centerRight,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text(
-          'Verify',
-          style: TextStyles.font16WhiteSemiBold,
+          'Next',
+          style: TextStyle(color: Colors.white, fontSize: 16),
         ),
         style: ElevatedButton.styleFrom(
-          maximumSize: Size(110, 50),
+          minimumSize: Size(110, 50),
           backgroundColor: Colors.black,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(6),
@@ -23,5 +24,6 @@ class BuildVerfiyButton extends StatelessWidget {
         ),
       ),
     );
+    ;
   }
 }
