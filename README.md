@@ -1,17 +1,15 @@
 ## 🚀 Getting Started
-  - Up-To-Do App is designed to help users organize their tasks efficiently and stay productive throughout their day.
-    Whether it's managing daily tasks, work assignments, or personal goals.
-  - App notifies the user of the task before starting using flutter_local_notifications.
-  - Our App reminds users every day at 8 PM ⏰to write tasks for tomorrow.
+- Flutter_maps is designed to help users You can register using your phone number and sending the confirmation code 
+- determine places efficiently and Search for any place you want and calculate the distance and time between the current place and the place you are searching for. 
+
 ## App Features
-  - Splash Screen: Wait for 3 seconds then navigate to On-Boarding Screens.
-  - On-Boarding Screens: Provide a seamless and engaging introduction to our app.
-  - Home Screen: The User can discover all tasks that he added before and can change the status to COMPLETED or DELETED.
-  - Add Task: User can add task details like title, note, date, start time, and end time.
+ - Provide destination Latitude and Longitude.
+ - Show markers for source and destination locations.
+ - Draw polyline for the closest path between source and destination.
+ - Navigate destination to google map app and use route direction.
 ## 📱 App view
-![splash](https://github.com/user-attachments/assets/431908d3-f35d-4816-ada0-8138bb3adb24)
-![onboarding](https://github.com/user-attachments/assets/f8654496-649a-4e3e-bbde-ccff8e5240c2)
-![Home](https://github.com/user-attachments/assets/87fdce88-669b-4e6a-b069-8a3d1f13dffa)
-![AddNotes](https://github.com/user-attachments/assets/ff3355cd-3ab7-40e0-81f3-4fa41becd0db)
+![auth](https://github.com/user-attachments/assets/88bcef3e-91e1-4174-9ca1-1cdfe3680b41)
+![map](https://github.com/user-attachments/assets/8aea6a28-be8a-4749-b449-e3dafca15665)
+
 ## 📁 File Structure
-![Screenshot (128)](https://github.com/user-attachments/assets/d1913014-daf3-4e8e-86e6-ba3be4f1fee7)
+![Screenshot (129)](https://github.com/user-attachments/assets/eb993b1d-a98a-4d36-bb33-77d8f22d6212)
